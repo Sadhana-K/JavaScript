@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Borrowing</title>
+</head>
+<body>
+    
+    <script>
+        // JS has default inbuilt methods
+        // call()
+        // apply()
+        // bind()
+
+        //call() - Borrowing a method from obj. and applying that method to another obj.
+        const student = {
+            Name: 'Naveen Kumar',
+            Class: 11,
+            printFunction: function (gender,age){
+                console.log(this.Name,this.Class,gender,age);
+            }
+        }
+        const student1= {
+            Name: 'Sadhana',
+            Class: 11
+        }
+        const student2 = {
+            Name: 'Eruma',
+            Class: '12'
+        }
+        student.printFunction()
+        student.printFunction.call(student1)
+        student.printFunction.call(student1,"female",16)
+
+        //apply() - as similar as call(), but here we can pass multiple arguments in an array format
+        student.printFunction.apply(student2,["male",17])
+
+        //bind()- allows us to call function later
+        let callLater = student.printFunction.bind(student2,["male",17])
+        callLater();
+        
+        </script>
+</body>
+</html>
