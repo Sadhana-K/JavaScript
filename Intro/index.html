@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Intro/style.css">
+    <title>Temperature Convertor</title>
+</head>
+<body>
+    <!--<script> //Internal js
+        let amount=1000;
+        console.log("Your bill amount is Rs." + amount);
+    </script> -->
+
+<!-- <script src="/Intro/basic.js"></script> --> <!--external js0-->
+    <!-- <h1 id="message"></h1>
+    <script>
+        let message=document.getElementById("message")
+        message.innerHTML="Welcome You"
+    </script> -->
+
+<!-- cm to inches calculator -->
+<div id="wrapper">
+    <h2>Celcius to Farenheit</h2>
+    <div class="inputdiv">
+        <input type="text" id="input" placeholder="Enter temperature in celcius">
+    </div>
+    <div>
+        <button type="submit" onclick="convert()">Convert to Farenheit</button>
+    </div>
+    <div id="result">
+
+    </div>
+</div> -->
+<script>
+  function convert(){
+    const celcius = Number(document.getElementById("input").value)
+    const farenheit = (9/5 * celcius)+32
+    const result = document.getElementById("result")
+    result.innerHTML = farenheit.toFixed(2) + " F"
+  }
+</script>
+
+<!-- <script src="/Intro/basic.js"></script> -->
+</body>
+</html>

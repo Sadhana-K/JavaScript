@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EB Bill Calculator</title>
+    <link rel="stylesheet" href="/If Else/style.css">
+</head>
+<body>
+    <h1>EB Bill Amount Calculator</h1>
+    <div class="container">
+        <div>
+            <input type="text" class="units" placeholder="Enter no.of units">
+        </div>
+        <div>
+            <button id="amount" type="submit" onclick="EBbill()">Calculate</button>
+        </div>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function EBbill(){
+            let current=Number(document.querySelector('.units').value)
+            let rate=0
+            let unit=0
+            // else if ladder
+            if(current===50){
+                rate=0.75
+            }
+            else if(current<=100){
+                unit=current-50
+                rate=(1.00*unit) + (50*0.75)
+            }
+            else if(current<=200){
+                unit=current-150
+                rate=(1.30*unit)+(50*0.75)+(100*1.00)
+            }
+            else if(current>=250){
+                rate=current*1.50
+            }
+            
+            let result=document.querySelector('#result')
+            result.innerHTML= "Your EB Bill Amount is " + rate.toFixed(2) + "Rs."
+        }
+    </script>
+</body>
+</html>

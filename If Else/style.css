@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(66, 65, 65);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+.container{
+    background-color: darkmagenta;
+    width: 70%;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+.container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.units{
+    margin: 32px;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#amount{
+    margin: 32px;
+    padding: 15px;
+    width: 100px;
+    border-radius: 8px;
+    background-color: rgb(77, 9, 77);
+    color: whitesmoke;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+}
+#amount:hover{
+    background-color: rgb(151, 93, 151);
+    color: white;
+}
+#result{
+    font-size: 24px;
+    padding-top: 30px;
+}

@@ -1,0 +1,57 @@
+:root{
+    --sage : #D9EDBF;
+    --peach: #FFB996;
+    --orange: #FFCF81;
+    --yellow: #FDFFAB; 
+}
+
+html,body{
+    background-color: var(--sage);
+}
+h1{
+    text-align: center;
+    color: var(--orange);
+    letter-spacing: 1px;
+    font-family: fantasy;
+    font-weight: 800;
+}
+.wrapper{
+    background-color: var(--yellow);
+    padding: 30px;
+    width: 400px;
+    margin: 200px auto;
+    border-radius: 14px;
+}
+#input{
+   height: 40px;
+   width: 250px;
+   border: none;
+   border-color: var(--sage);
+   border-radius: 8px;
+   padding-left: 10px;
+   font-size: 22px;
+   font-family: fantasy;
+   letter-spacing: 1px;
+}
+#btn{
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: none;
+    background-color: var(--peach);
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+button:hover{
+    cursor:pointer;
+}
+#todoList{
+    color: black;
+    font-family: fantasy;
+    font-size: 24px;
+}
+#todoList p:hover{
+    cursor: pointer;
+}

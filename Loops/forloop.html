@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+       let arr = ['apple','orange','grapes','banana']
+       console.log(arr[0])
+
+       //we can get all elements in array using this for loop
+       //for...of
+       for(let fruit of arr)
+            console.log(fruit)
+
+        //to get properties and values in object 
+        //for...in
+        let item={
+            name:'mobile',
+            price:25000,
+            model:'12pro'
+        }
+
+        for(let key in item){
+            console.log(key)     //accessing properties of objact
+            console.log(item[key])   //acceesing values of properties in object
+        }
+    </script>
+</body>
+</html>
