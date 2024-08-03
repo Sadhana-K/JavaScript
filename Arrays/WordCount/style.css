@@ -1,0 +1,53 @@
+body{
+    background-color: khaki;
+}
+h2{
+    text-align: center;
+    font-size: 42px;
+}
+.card{
+    background-color: black;
+    padding: 30px 0;
+}
+.container textarea{
+    display: block;
+    width: 60%;
+    height: 200px;
+    padding: 24px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    border: 3px solid khaki;
+    margin: 0 auto;  /*to make text area in center*/
+}
+.container button{
+    padding: 16px 60px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin-top: 40px;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.container button:hover{
+    background-color: rgb(78, 78, 78);
+}
+.container .count{
+    font-size: 32px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35%;
+}
+.container .count span{
+    font-weight: bold;
+    font-size: 48px;
+}
